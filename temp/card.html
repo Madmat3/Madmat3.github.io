@@ -9,9 +9,17 @@
         <div class = "card_front">
             <img class = "card_image" src = "../images/hello-icon-128.png">
         </div>
-
         <div class = "card_back">
             <p class = "card_word">Chaussette</p>
         </div>
     </div>
+
+    <script>
+        const cards = document.querySelectorAll(".card");
+
+        function flipCard() {
+            this.classList.toggle("flip");
+        }
+        cards.forEach((card) => card.addEventListener("click", flipCard));
+    </script>
 </body>

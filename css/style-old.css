@@ -91,10 +91,8 @@ li {
   -webkit-transform: rotateY(180deg);
   position: absolute;
   text-align: center;
-  right: 0;
-  left: 0;
-  top: 10px;
-  color: #20263f;
+  padding: 30%;
+  color: black;
 }
 
 
@@ -107,8 +105,5 @@ li {
     position: relative;
     perspective: 1000px;
     align-items: stretch;
-  }
-  .cards__single {
-    width: 20%;
   }
 }
