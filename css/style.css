@@ -13,23 +13,61 @@
     font-family: Nunito;
     font-size: large;
     font-weight: 300;
-    text-align: center;
-    background-color: #b48352;
-}
-
-.card_front {
-    text-align: center;
-    background-color: #6c8976;
 }
 
 .card {
-    border: 2px solid black;
-    border-radius: 10%;
+    background: #b48352;
+    display: flex;
+    flex-direction: column;
+    /* width:80%; */
+    /* border-radius: 16px; */
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    text-align: center;
+    -webkit-transition: transform 0.6s;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    position: relative;
+    transition: transform 0.6s;
+    -webkit-transition: transform 0.6s;
+  }
 
-    padding: 10px;
-    width: 10%;
+.card.flip {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+  }
+
+.card_front,
+.card_back {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.card_front {
+  height: 100%;
+  transform: rotateX(0deg);
+  -webkit-transform: rotateX(0deg);
+}
+
+.card_back {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  position: absolute;
+  text-align: center;
+  vertical-align: middle;
+  right: 0;
+  left: 0;
 }
 
 .centered {
-    text-align: center;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .card {
+    width: 20%;
   }
+}
+

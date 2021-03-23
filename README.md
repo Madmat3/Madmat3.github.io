@@ -21,6 +21,7 @@
 - Dictionnaire
 - Nombre de carte / Taille de la grille
 - Multijoueur sur le même pc
+- Systèmes de points
 
 ### Couleurs
 - #b48352
