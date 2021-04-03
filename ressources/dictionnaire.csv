@@ -13,11 +13,28 @@ lane,voie (sur route),1
 toll,péage,1
 trade show,salon professionnel,1
 suburb,banlieue,1
-catch,attraper,1
-miss,manquer,1
-hail,héler,1
+to catch,attraper,1
+to miss,manquer,1
+to hail,héler,1
 carpool,covoiturage,1
-commute,(faire) le trajet maison-travail,1
-
-
-
+to commute,faire le trajet maison-travail,1
+guest,client,2
+lobby,hall d'entrée,2
+front desk,reception,2
+rate,tarif,2
+included,compris,2
+porter,bagagiste,2
+elevator,ascenseur,2
+keycard,clé magnétique,2
+room service,service de chambre,2
+housekeeper,gouvernante,2
+towel,serviette,2
+blanket,couverture,2
+pillow,oreiller,2
+amenities,aménagements,2
+convenient,pratique,2
+view,vue,2
+shuttle,navette,2
+to book,réserver,2
+to vacate,quitter,2
+to check out,régler sa note,2
