@@ -14,11 +14,11 @@ for (let i = 0 ; i < l ; i++) {
 
     var div_front = document.createElement('div');
     div_front.setAttribute('class', 'card_front');
-    div_front.innerHTML = '<img class = "card_image" src = "https://madmat3.github.io/images/anglais1.png">'
+    div_front.innerHTML = '<img class = "card_image" src = "../images/anglais1.png">'
     
     var div_back = document.createElement('div');
     div_back.setAttribute('class', 'card_back');
-    div_back.innerHTML ='<img class = "card_flag" src = "https://madmat3.github.io/images/fr.png">\n' +
+    div_back.innerHTML ='<img class = "card_flag" src = "../images/fr.png">\n' +
                         '<p class = "card_word">Jambon</p>';
 
     div_card.appendChild(div_front);

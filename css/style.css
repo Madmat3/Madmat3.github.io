@@ -9,26 +9,24 @@
     font-weight:    300;
 }
 
-.card_word {
-    font-family: Nunito;
-    font-size:medium;
-    font-weight: 300;
+body {
+  text-align: center;
 }
 
 .card {
-  display: table-row;
-  flex-direction: column;
+  /* display: table-row; */
+  /* flex-direction: column; */
 
-  width: 10%;
-  
-  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
+  /* margin: 10% auto; */
+
+  border: solid white;
   cursor: pointer;
   text-align: center;
   -webkit-transition: transform 0.6s;
   transform-style: preserve-3d;
   transition: 0.5s;
   -webkit-transition: 0.5s;
-  position: relative;
+  position:relative;
   transition: transform 0.6s;
   -webkit-transition: transform 0.6s;
 }
@@ -36,7 +34,11 @@
 .card:after{
   content: "";
   display: block;
-  padding-bottom: 100%;
+  /* padding-bottom: 100%; */
+}
+
+.card:hover {
+  border: solid black;
 }
 
 /*.card_content {
@@ -76,12 +78,16 @@
   right: 0;
   left: 0;
   height: 100%;
-
+  width: 100%;
+  margin: auto;
 }
 
 .card_image {
   display: block;
-  width: 50%;
+  /* width: 50%; */
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
   height: auto;
   margin-left: auto;
   margin-right: auto;
@@ -91,19 +97,67 @@
 
 .card_flag {
   display: block;
-  width: 20%;
+  width: 4vw;
   height: auto;
+
+  /* background-color: grey; */
 
   margin-top: 5%;
   margin-left: 5%;
-  margin-bottom: 5%;
+  margin-bottom: 2%;
 }
 
 .card_word {
-  height: 100%;
+  /* height: 100%; */
+  /* background-color: green; */
+  font-size: 1.6vw;
+  font-family: Nunito;
+  font-weight: 300;
+  padding: 5%;
+  word-wrap: normal;
+  margin: auto;
+  max-width: 14.5vw;
+  min-width: 14.5vw;
+  max-height: 6.8vw;
+  min-height: 6.8vw;
+}
 
-  /*margin-top: auto;
-  margin-bottom: auto;*/
+/* table {
+  background-color: blue;
+} */
+
+/* tbody#cards {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: red;
+} */
+
+#cards_ {
+  width: 60%;
+  margin: auto;
+}
+
+.board {
+  width: 100%;
+}
+
+/* #cards:nth-child(1) {
+  width: 0px;
+} */
+
+/* table {
+  border-spacing: 100%;
+} */
+
+/* td {
+  border: solid black;
+} */
+
+.card_box {
+  /* background-color: yellow; */
+  margin: auto;
+  /* max-height: 10vh; */
+  overflow: hidden;
 }
 
 .centered {
