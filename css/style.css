@@ -11,6 +11,7 @@
 
 body {
   text-align: center;
+  font-family: Nunito;
 }
 
 .card {
@@ -170,3 +171,47 @@ body {
   }
 }*/
 
+.menu {
+    background-color: red;
+    border-radius: 1vw;
+    margin: auto 15vw;
+    padding-top: 1vw;
+}
+
+#title {
+    font-size: 3vw;
+    margin: 1vw;
+}
+
+.button {
+    display: inline-block;
+    padding: 1vw 1.5vw;
+    font-size: 100%;
+    cursor: pointer;
+    text-align: center;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 1vw;
+    box-shadow: 0 10% #999;
+    outline:none;
+    margin: 1vw;
+}
+
+#btn-title {
+    font-weight: 300;
+    font-size: 1.5vw;
+}
+
+#btn-img {
+    width: auto;
+    height: 12vw;
+    margin: auto 2vw;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 50% #666;
+    transform: translateY(3%);
+}
