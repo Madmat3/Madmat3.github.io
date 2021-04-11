@@ -208,6 +208,12 @@ body {
     margin: auto 2vw;
 }
 
+#btn-img-2 {
+  width: auto;
+  height: 5vw;
+  margin: auto 2vw;
+}
+
 .button:hover {background-color: var(--brown-normal)}
 
 .button:active {
