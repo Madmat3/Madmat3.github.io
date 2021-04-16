@@ -1,13 +1,40 @@
+
 <!DOCTYPE html>
-<!-- saved from url=(0067)file:///home/pauline/Bureau/Projet/Madmat3.github.io/temp/menu.html -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <title>Hello World</title>
-    <link rel="stylesheet" href="./menu_files/style.css">
-</head><body class="fullscreen">
-    
-  <div class="centered">
-    <h1 tabindex="0" id="title">Wonder Wonbat Word-Matching</h1>
-    <div style = "width: 20vw; height: 20vw; overflow:scroll; border: thin #000 solid;">
+<html>
+ <head>
+ </head>
+ <body id="body1">
+ <div id="menu-div">
+  <p>
+   <button id = "return Menu" class="menu-button"S onclick="document.location = '../index.html'"><img src="../images/return.png" /></button>
+  </p>
+ </div>
+  <div class="div-content">
+    <div class="table-responsive">
+     <h1 align="center" id="title-see">Dictionnary and themes</h1>
+
+      <div id="div3">
+
+        <label for="cat-options" id="lab-cat">Category: </label>
+        <select id="cat-options"></select>
+        <button id = "show-cat" onclick="displayWordsCat()">Show this category</button>
+
+
+       <button type="button" name="display-data" id="display-data" onclick="displayWords(localStorage.getObj('data'));">Show all</button>
+      </div>
+
+       <div id="words-table">
+       </div>
     </div>
-</body></html>
+  </div>
+ </body>
+</html>
+
+<script>
+
+$(document).ready(function() {
+ displayWords(localStorage.getObj('data'));
+ displayCategories('cat-options');
+ });
+</script>
+

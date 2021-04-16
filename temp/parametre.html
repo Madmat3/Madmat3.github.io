@@ -5,9 +5,13 @@
     <title>Hello World</title>
     <link rel="stylesheet" href="./menu_files/style.css">
 </head><body class="fullscreen">
-    
+    <div id="menu-div">
+      <p>
+       <button id = "return Menu" class="menu-button"S onclick="document.location = '../index.html'"><img src="../images/return.png" /></button>
+      </p>
+     </div>
   <div class="centered">
-    <h1 tabindex="0" id="title">Wonder Wonbat Word-Matching</h1>
+    <h1 tabindex="0" id="title">Settings</h1>
     <form action="/action_page.php">
       <label for="difficulty">Choose a difficulty :</label>
       <select name="difficulty" id="difficulty">
@@ -29,6 +33,13 @@
           <option value="8">8</option>
           <option value="16">16</option>
           <option value="16">32</option>
+      </select>
+      <br><br>
+      <form action="/action_page.php">
+      <label for="multi">Choose with multiplayer or not :</label>
+      <select name="multi" id="multi">
+          <option value="no">no</option>
+          <option value="multi">multi</option>
       </select>
       <br><br>
       <input type="submit" value="Submit">
