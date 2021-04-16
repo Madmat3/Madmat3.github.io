@@ -3,23 +3,25 @@ $(document).ready(function() {
         type: "GET",
         url: "https://madmat3.github.io/ressources/dictionnaire.csv",
         dataType: "text",
-        success: function(data) {processData(data);}
+        success: function(data) {processData(data); init();}
      });
 });
+
+var matrice = [];
 
 function processData(allText) {
     var record_num = 3;  // or however many elements there are in each row
     var allTextLines = allText.split(/\r\n|\n/);
     var size = allTextLines.length;
-    console.log(size);
-    var matrice = [];
+    // console.log(size);
+    //var matrice = [];
     for (var i=0; i<size ; i++) {
         entries = allTextLines[i].split(',');
         if (entries.length == 3) {
             matrice.push(entries);
         }   
     }    
-    console.log(matrice);
+    // console.log(matrice);
     
 /*
     var headings = entries.splice(0,record_num);
