@@ -5,6 +5,10 @@ function initDictionnnaire() {
     });
 }
 
+function init() {}
+function initAddWord() {}
+
+
 function displayThemes(idSelectCat) {
     var themeList = document.getElementById(idSelectCat);
 	var allThemes = getAllThemes();
@@ -16,7 +20,6 @@ function displayThemes(idSelectCat) {
 		opt.text = allThemes[i];
 		themeList.add(opt);
 	}
-    console.log(themeList);
 }
 
 function getAllThemes() {
@@ -84,4 +87,3 @@ function getWordsFromTheme(cat) {
     }
 	return tempWords;
 }
-

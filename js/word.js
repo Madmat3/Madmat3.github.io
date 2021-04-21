@@ -12,7 +12,7 @@ $(document).ready(function() {
         type: "GET",
         url: "https://madmat3.github.io/ressources/theme.csv",
         dataType: "text",
-        success: function(data) {processDataTheme(data); initDictionnnaire();}
+        success: function(data) {processDataTheme(data); initDictionnnaire(); initAddWord();}
      });
 });
 
@@ -28,23 +28,7 @@ function processData(allText) {
         if (entries.length == 3) {
             matrice.push(entries);
         }   
-    }    
-    // console.log(matrice);
-    
-/*
-    var headings = entries.splice(0,record_num);
-    while (entries.length>0) {
-        var tarr = [];
-        for (var j=0; j<record_num; j++) {
-            entries = allTextLines[j].split(',');
-            tarr.push(entries);
-            console.log(tarr);
-        }
-        lines.push(tarr);
-        
     }
-    // alert(lines);
-    console.log(lines);*/
 }
 
 function processDataTheme(allText) {

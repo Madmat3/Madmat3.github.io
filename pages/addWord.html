@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+ <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/localStorageArray.js"></script>
+    <script src="../js/word.js"></script>
+    <script src="../js/addWord.js"></script>
+ </head>
+ <body id="body1">
+ <div id="menu-div">
+  <p>
+   <button id = "return Menu" class="menu-button"S onclick="document.location = '../index.html'"><img src="../images/return.png" /></button>
+  </p>
+ </div>
+  <div class="addWord">
+    <h1>Add a word</h1></p>
+
+		<p>
+			<label for="wordEng">English word : </label>
+			<input type="text" id="wordEng">
+		</p>
+			<p>
+				<label for="wordFr">French translation : </label>
+				<input type="text" id="wordFr">
+			</p>
+		<p>
+			<label for="fexistingCat" id="lab-cat">Theme : </label>
+            <select id="fexistingCat">
+            </select>
+			<label for="fnewCat"> or a new one: </label>
+			<input type="text" id="fnewCat">
+		</p>
+		<p>
+			<button id='add-word-button' onclick="displayAddWord()">Add to the dictionnary</button>
+            <button id="return Dictionnary" onclick="document.location = 'dictionnaire.html'">Return to dictionnary</button>
+		</p>
+	</div>
+</div>
+ </body>
+</html>
+
