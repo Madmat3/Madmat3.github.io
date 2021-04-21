@@ -10,7 +10,7 @@
 }
 
 body {
-  --green-darker: #060C00;
+  --green-darker: #060C00;  
   --green-dark: #295802;
   --green-normal: #62A12D;
   --green-light: #A3DD73;
@@ -182,10 +182,11 @@ body {
     margin: 1vw;
 }
 
-.button {
+.button, .button-return {
     display: inline-block;
     padding: 1vw 1.5vw;
     font-size: 100%;
+    font-family: Nunito;
     cursor: pointer;
     text-align: center;
     background-color: var(--brown-light);
@@ -220,4 +221,29 @@ body {
     background-color: var(--brown-dark);
     box-shadow: 0 50% #666;
     transform: translateY(3%);
+}
+
+.page-gauche, .page-droite, .page-centre {
+  width: 33%;
+}
+
+.score-panel {
+  background-color: var(--brown-light);
+  border: none;
+  border-radius: 1vw;
+  width: 10vw;
+  margin: auto;
+  padding: 0.3vw 0;
+  font-size: 1.3vw;
+}
+
+#score {
+  font-family: Nunito;
+  font-weight: 300;
+}
+
+.button-return {
+  font-size: 1.3vw;
+  font-family: Nunito;
+  font-weight: 300;
 }
