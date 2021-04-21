@@ -180,6 +180,7 @@ function check_association(id1, id2) {
 function getRandomInt(max) {
   return Math.floor(Math.random() * max);
 }
+<<<<<<< HEAD
 
 function shuffle(array) {
   var tmp, current, top = array.length;
@@ -195,3 +196,5 @@ function shuffle(array) {
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
+=======
+>>>>>>> 12144f4c6f57464a69255acae0d80cbb49152082

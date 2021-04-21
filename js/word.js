@@ -7,14 +7,22 @@ $(document).ready(function() {
      });
 });
 
+$(document).ready(function() {
+    $.ajax({
+        type: "GET",
+        url: "https://madmat3.github.io/ressources/theme.csv",
+        dataType: "text",
+        success: function(data) {processDataTheme(data); initDictionnnaire();}
+     });
+});
+
 var matrice = [];
+var themes = [];
 
 function processData(allText) {
     var record_num = 3;  // or however many elements there are in each row
     var allTextLines = allText.split(/\r\n|\n/);
     var size = allTextLines.length;
-    // console.log(size);
-    //var matrice = [];
     for (var i=0; i<size ; i++) {
         entries = allTextLines[i].split(',');
         if (entries.length == 3) {
@@ -38,3 +46,16 @@ function processData(allText) {
     // alert(lines);
     console.log(lines);*/
 }
+
+function processDataTheme(allText) {
+    var record_num = 2;  // or however many elements there are in each row
+    var allTextLines = allText.split(/\r\n|\n/);
+    var size = allTextLines.length;
+    for (var i=0; i<size ; i++) {
+        entries = allTextLines[i].split(',');
+        if (entries.length == 2) {
+           themes.push(entries);
+        }   
+    } 
+}
+

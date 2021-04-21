@@ -2,6 +2,10 @@
 <!DOCTYPE html>
 <html>
  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/localStorageArray.js"></script>
+    <script src="../js/word.js"></script>
+    <script src="../js/dictionnary.js"></script>
  </head>
  <body id="body1">
  <div id="menu-div">
@@ -15,12 +19,10 @@
 
       <div id="div3">
 
-        <label for="cat-options" id="lab-cat">Category: </label>
+        <label for="cat-options" id="lab-cat">Theme : </label>
         <select id="cat-options"></select>
-        <button id = "show-cat" onclick="displayWordsCat()">Show this category</button>
+        <button id = "show-cat" onclick="displayWordsTheme()">Show this theme</button>
 
-
-       <button type="button" name="display-data" id="display-data" onclick="displayWords(localStorage.getObj('data'));">Show all</button>
       </div>
 
        <div id="words-table">
@@ -29,12 +31,4 @@
   </div>
  </body>
 </html>
-
-<script>
-
-$(document).ready(function() {
- displayWords(localStorage.getObj('data'));
- displayCategories('cat-options');
- });
-</script>
 
