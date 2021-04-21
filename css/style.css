@@ -142,6 +142,7 @@ body {
   min-width: 14.5vw;
   max-height: 6.8vw;
   min-height: 6.8vw;
+  text-transform: capitalize;
 }
 
 #cards_ {
@@ -176,7 +177,6 @@ body {
     margin: auto 15vw;
     padding-top: 1vw;
 }
-
 #title {
     font-size: 3vw;
     margin: 1vw;
@@ -198,6 +198,16 @@ body {
     color: var(--brown-darker);
 }
 
+.button-return {
+  width: 15vw;
+  text-align: center;
+  font-size: 2vw;
+}
+
+.welldone {
+  font-size: 2vw;
+}
+
 #btn-title {
     font-weight: 300;
     font-size: 1.5vw;
@@ -215,9 +225,9 @@ body {
   margin: auto 2vw;
 }
 
-.button:hover {background-color: var(--brown-normal)}
+.button:hover, .button-return:hover {background-color: var(--brown-normal)}
 
-.button:active {
+.button:active, .button-return:active {
     background-color: var(--brown-dark);
     box-shadow: 0 50% #666;
     transform: translateY(3%);
@@ -246,4 +256,9 @@ body {
   font-size: 1.3vw;
   font-family: Nunito;
   font-weight: 300;
+}
+
+.victory-img {
+  width: 15vw;
+  height: auto;
 }

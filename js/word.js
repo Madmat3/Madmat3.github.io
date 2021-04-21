@@ -3,7 +3,7 @@ $(document).ready(function() {
         type: "GET",
         url: "https://madmat3.github.io/ressources/dictionnaire.csv",
         dataType: "text",
-        success: function(data) {processData(data); init();}
+        success: function(data) {processData(data); /*init();*/}
      });
 });
 
