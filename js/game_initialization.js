@@ -1,4 +1,8 @@
-//document.getElementById("game").style.display = "none";
+document.getElementById("game").style.display = "none";
+// btn_play = document.getElementById("play-btn").addEventListener('click', function(e) {
+//     e.preventDefault();
+//     begin_init();
+// });
 
 function begin_init() {
     console.log("coucou");
@@ -7,4 +11,5 @@ function begin_init() {
     init();
 
     document.getElementById("game").style.display = "block";
+    return false;
 }

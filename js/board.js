@@ -2,8 +2,6 @@
 var l = 3;
 var c = 4;
 
-theme = 1;
-
 score = 0;
 
 var test = document.createElement('div');
@@ -106,7 +104,7 @@ function init() {
   }
 }
 
-const cards = document.querySelectorAll(".card");
+//const cards = document.querySelectorAll(".card");
 selected_cards = []
 found_cards = []
 
