@@ -10,8 +10,7 @@ function init() {}
 function addWord(wordEng, wordFr, cat) {
 	var newWordArray = [wordEng, wordFr, cat];
 	matrice.push(newWordArray);
-    console.log(matrice);
-	localStorage.setObj('data', matrice);   // TODO revoir l'update de l'enregistrement
+	localStorage.setObj('data', matrice);
 }
 
 function displayAddWord() {
@@ -37,9 +36,12 @@ function displayAddWord() {
         themes.push(newThemeArray);
         console.log(themes);
         themeNumber = (Number(maxthemeNumber)+1).toString();
-        localStorage.setObj('fexistingCat', themes);     // TODO revoir l'update de l'enregistrement
+        displayThemesAddUpdate('fexistingCat');
     }
     addWord(wordEng, wordFr, themeNumber);
+    localStorage.setObj('data', matrice);
+    localStorage.setObj('data_theme', themes);
+    localStorage.setObj('fexistingCat', themes);
 	document.getElementById("wordEng").value = '';
 	document.getElementById("wordFr").value = '';
 }
@@ -51,11 +53,23 @@ function displayThemesAdd(idSelectCat) {
     opt.text = "New theme";
     themeList.add(opt);
 	for(var i = 0 ; i < allThemes.length ; i++) {
-		var opt = document.createElement("option");
-		opt.text = allThemes[i];
+		opt = document.createElement("option");
+        opt.text = allThemes[i];
 		themeList.add(opt);
 	}
 }
+
+function displayThemesAddUpdate(idSelectCat) {
+    var themeList = document.getElementById(idSelectCat);
+	var allThemes = getAllThemes();
+    console.log(allThemes);
+    var opt = document.createElement("option");
+    console.log(allThemes[allThemes.length-1]);
+    opt.text = allThemes[allThemes.length-1];
+    console.log(themeList);
+    themeList.add(opt);
+}
+
 
 function getAllThemes() {
     var max = themes.length;

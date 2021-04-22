@@ -2,6 +2,7 @@ function initDictionnnaire() {
     $(document).ready(function() {
         displayWords(localStorage.getObj('data'));
         displayThemes('cat-options');
+        console.log(localStorage);
     });
 }
 
@@ -12,11 +13,11 @@ function initAddWord() {}
 function displayThemes(idSelectCat) {
     var themeList = document.getElementById(idSelectCat);
 	var allThemes = getAllThemes();
-    var opt = document.createElement("option");
+    var opt = document.createElement('option');
     opt.text = "all";
     themeList.add(opt);
 	for(var i = 0 ; i < allThemes.length ; i++) {
-		var opt = document.createElement("option");
+        opt = document.createElement('option');
 		opt.text = allThemes[i];
 		themeList.add(opt);
 	}
