@@ -6,7 +6,7 @@ function initDictionnnaire() {
     });
 }
 
-function init() {}
+/*function init() {}*/
 function initAddWord() {}
 
 

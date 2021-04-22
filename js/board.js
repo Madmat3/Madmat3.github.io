@@ -8,7 +8,6 @@ score = 0;
 
 var test = document.createElement('div');
 board = Array(l);
-
 //selected_cards = [];
 
 
@@ -48,7 +47,7 @@ function select_words() {
     output.push(cur_word);
     used_words.push(index);
   }
-  console.log(output);
+  // console.log(output);
   return output;
 }
 
@@ -146,7 +145,7 @@ function check_winning() {
   );
   if (win) {
     score += 10;
-    // console.log(selected_cards[0], selected_cards[1]);
+    console.log(selected_cards[0], selected_cards[1]);
     found_cards.push(selected_cards[0]);
     found_cards.push(selected_cards[1]);
     selected_cards = [];

@@ -5,7 +5,7 @@ function initAddWord() {
 }
 
 function initDictionnnaire() {}
-function init() {}
+/*function init() {}*/
 
 function addWord(wordEng, wordFr, cat) {
 	var newWordArray = [wordEng, wordFr, cat];

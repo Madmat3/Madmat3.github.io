@@ -11,33 +11,62 @@
     <!-- <section class="cards">
         
     </section> -->
-    <table class = "page">
-        <div class = "board">
-            <tr>
-                <td class = "page-gauche">
-                    <button class = "button-return" onclick = "open('../index.html', '_self','resizable,location,menubar,toolbar,scrollbars,status');">Back to menu</button>
-                    <div class = "score-panel">
-                        <h4>Score</h4>
-                        <p id = "score">0</p>
-                    </div>
-                </td>
-                <td class = "page-centre">
-                    <table id = "cards_">
-                        <tbody id = "cards">
-                            
-                        </tbody>
-                    </table>
-                </td>
-                <td class = 'page-droite'>
-                    <!-- <p>Droite</p> -->
-                </td>
-            </tr>
+    <div class="div-content" id = "game-setup">
+        <div class="table-responsive">
+            <h1 align="center" id="title-see" style = "font-weight: 300;">Select a theme</h1>
+            <div id="div3">
+                <div class = "theme-selector-wraper">
+                <label for="cat-options" id="lab-cat">Theme : </label>
+                <div class = "theme-menu">
+                    <select id="cat-options" class = "theme-selector"></select>
+                </div>
+                </div>
+                <div>
+                <button id = "show-cat" class = "button-return" onclick="displayWordsTheme()">Show this theme</button>
+                <button class = "button-return" onclick = "begin_init()">Play !</button>
+                </div>
+                <div id="menu-div">
+                <button class = "button-return" onclick = "open('../index.html', '_self','resizable,location,menubar,toolbar,scrollbars,status');">Back to menu</button>
+                </div>
+            </div>
+            <div>
+                <div id="words-table" style = "width: 100%;">
+                </div>
+            </div>
+            </div>
         </div>
-    </table>
+    </div>
+
+    <div id = "game">
+        <table class = "page">
+            <div class = "board">
+                <tr>
+                    <td class = "page-gauche">
+                        <button class = "button-return" onclick = "open('../index.html', '_self','resizable,location,menubar,toolbar,scrollbars,status');">Back to menu</button>
+                        <div class = "score-panel">
+                            <h4>Score</h4>
+                            <p id = "score">0</p>
+                        </div>
+                    </td>
+                    <td class = "page-centre">
+                        <table id = "cards_">
+                            <tbody id = "cards">
+                                
+                            </tbody>
+                        </table>
+                    </td>
+                    <td class = 'page-droite'>
+                        <!-- <p>Droite</p> -->
+                    </td>
+                </tr>
+            </div>
+        </table>
+    </div>
     
     <script src="../js/localStorageArray.js"></script>
     <script src="../js/dictionnary.js"></script>
-    <script src="../js/words-board.js"></script>
+    <script src="../js/word.js"></script>
     <script src="../js/board.js"></script>
+    <script src="../js/game_initialization.js"></script>
     <script src="../js/game.js"></script>
 </body>
