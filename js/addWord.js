@@ -34,12 +34,12 @@ function displayAddWord() {
         }
         var newThemeArray = [document.getElementById("fnewCat").value, (Number(maxthemeNumber)+1).toString()];
         themes.push(newThemeArray);
-        console.log(themes);
         themeNumber = (Number(maxthemeNumber)+1).toString();
         displayThemesAddUpdate('fexistingCat');
     }
     addWord(wordEng, wordFr, themeNumber);
-    localStorage.setObj('data', matrice);
+    //localStorage.setObj('data', matrice);
+    localStorage.setObj('data_new', matrice);
     localStorage.setObj('data_theme', themes);
     localStorage.setObj('fexistingCat', themes);
 	document.getElementById("wordEng").value = '';
