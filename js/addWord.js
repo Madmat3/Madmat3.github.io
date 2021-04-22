@@ -62,11 +62,8 @@ function displayThemesAdd(idSelectCat) {
 function displayThemesAddUpdate(idSelectCat) {
     var themeList = document.getElementById(idSelectCat);
 	var allThemes = getAllThemes();
-    console.log(allThemes);
     var opt = document.createElement("option");
-    console.log(allThemes[allThemes.length-1]);
     opt.text = allThemes[allThemes.length-1];
-    console.log(themeList);
     themeList.add(opt);
 }
 
