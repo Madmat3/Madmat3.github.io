@@ -119,20 +119,22 @@ function flipCard(id) {
 
 function identifyCard() {
   id = this.getAttribute("id");
-  console.log(selected_cards);
-  if (selected_cards.includes(id)) {
-    //flipCard(this.getAttribute("id"));
-    //selected_cards.splice(selected_cards.indexOf(id));
-  } else {
-    if (selected_cards.length >= 2) {
-      console.log("ntm");
-    } else if (selected_cards.length == 1) {
-      selected_cards.push(id);
-      flipCard(this.getAttribute("id"));
-      setTimeout(check_winning, 1000);
+  console.log(found_cards);
+  if (!found_cards.includes(id)) {
+    if (selected_cards.includes(id)) {
+      //flipCard(this.getAttribute("id"));
+      //selected_cards.splice(selected_cards.indexOf(id));
     } else {
-      selected_cards.push(id);
-      flipCard(this.getAttribute("id"));
+      if (selected_cards.length >= 2) {
+        console.log("ntm");
+      } else if (selected_cards.length == 1) {
+        selected_cards.push(id);
+        flipCard(this.getAttribute("id"));
+        setTimeout(check_winning, 1000);
+      } else {
+        selected_cards.push(id);
+        flipCard(this.getAttribute("id"));
+      }
     }
   }
 }
@@ -143,10 +145,11 @@ function check_winning() {
     selected_cards[1]
   );
   if (win) {
-    selected_cards = [];
     score += 10;
+    // console.log(selected_cards[0], selected_cards[1]);
     found_cards.push(selected_cards[0]);
     found_cards.push(selected_cards[1]);
+    selected_cards = [];
     document.getElementById("score").innerHTML = score;
     if (found_cards.length == words.length) {
       open('victory.html', '_self','resizable,location,menubar,toolbar,scrollbars,status');
