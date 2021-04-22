@@ -42,6 +42,6 @@ function processDataTheme(allText) {
            themes.push(entries);
         }   
     }
-    //localStorage.setObj('th', themes);
+    localStorage.setObj('data_theme', themes);
 }
 
