@@ -305,7 +305,7 @@ select {
 }
 
 .theme-menu {
-  width: 10vw;
+  width: 15vw;
   /* min-width: 15ch;
   max-width: 30ch; */
   margin: auto;
@@ -345,4 +345,27 @@ select {
 select,
 .theme-menu:after {
   grid-area: select;
+}
+
+.addWord {
+  font-family: Nunito;
+  font-size: 1.5vw;
+}
+
+.sai-input {
+  margin: 1vw;
+}
+
+.lab-left {
+  left: 0;
+  right: auto;
+}
+
+input {
+  border-radius: 1vw;
+  background-color: var(--brown-light);
+  border : solid transparent;
+  width: 15vw;
+  height: 2vw;
+  margin: 0.2vw;
 }
