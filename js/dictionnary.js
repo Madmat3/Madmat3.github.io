@@ -1,7 +1,7 @@
 function initDictionnnaire() {
     $(document).ready(function() {
-    displayWords(localStorage.getObj('data'));
-    displayThemes('cat-options');
+        displayWords(localStorage.getObj('data'));
+        displayThemes('cat-options');
     });
 }
 

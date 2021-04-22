@@ -3,7 +3,7 @@ $(document).ready(function() {
         type: "GET",
         url: "https://madmat3.github.io/ressources/dictionnaire.csv",
         dataType: "text",
-        success: function(data) {processData(data); /*init();*/}
+        success: function(data) {processData(data); init();}
      });
 });
 
@@ -29,6 +29,7 @@ function processData(allText) {
             matrice.push(entries);
         }   
     }
+    localStorage.setObj('data', matrice);
 }
 
 function processDataTheme(allText) {
@@ -40,6 +41,7 @@ function processDataTheme(allText) {
         if (entries.length == 2) {
            themes.push(entries);
         }   
-    } 
+    }
+    //localStorage.setObj('th', themes);
 }
 

@@ -2,15 +2,16 @@
 <!DOCTYPE html>
 <html>
  <head>
+    <meta charset="utf-8">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="../js/localStorageArray.js"></script>
-    <script src="../js/word.js"></script>
     <script src="../js/dictionnary.js"></script>
+    <script src="../js/word.js"></script>
  </head>
  <body id="body1">
  <div id="menu-div">
   <p>
-   <button id = "return Menu" onclick="document.location = '../index.html'"><img src="../images/return.png" /></button>
+   <button id = "return Menu" class="menu-button"S onclick="document.location = '../index.html'"><img src="../images/return.png" /></button>
   </p>
  </div>
   <div class="div-content">
@@ -22,7 +23,7 @@
         <label for="cat-options" id="lab-cat">Theme : </label>
         <select id="cat-options"></select>
         <button id = "show-cat" onclick="displayWordsTheme()">Show this theme</button>
-        <button id = "show-cat" onclick="document.location = 'addWord.html'">Add a word</button>
+
       </div>
 
        <div id="words-table">
