@@ -3,31 +3,36 @@
 <html>
  <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="../css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="../js/localStorageArray.js"></script>
     <script src="../js/dictionnary.js"></script>
     <script src="../js/word.js"></script>
  </head>
  <body id="body1">
- <div id="menu-div">
-  <p>
-   <button id = "return Menu" class="menu-button"S onclick="document.location = '../index.html'"><img src="../images/return.png" /></button>
-  </p>
- </div>
   <div class="div-content">
     <div class="table-responsive">
-     <h1 align="center" id="title-see">Dictionnary and themes</h1>
-
-      <div id="div3">
-
-        <label for="cat-options" id="lab-cat">Theme : </label>
-        <select id="cat-options"></select>
-        <button id = "show-cat" onclick="displayWordsTheme()">Show this theme</button>
-
+      <h1 align="center" id="title-see" style = "font-weight: 300;">Dictionnary and themes</h1>
+        <div id="div3">
+          <div class = "theme-selector-wraper">
+            <label for="cat-options" id="lab-cat">Theme : </label>
+            <div class = "theme-menu">
+              <select id="cat-options" class = "theme-selector"></select>
+            </div>
+          </div>
+          <div>
+            <button id = "show-cat" class = "button-return" onclick="displayWordsTheme()">Show this theme</button>
+            <button class = "button-return" onclick = "open('addWord.html', '_self','resizable,location,menubar,toolbar,scrollbars,status');">Add a word</button>
+          </div>
+          <div id="menu-div">
+            <button class = "button-return" onclick = "open('../index.html', '_self','resizable,location,menubar,toolbar,scrollbars,status');">Back to menu</button>
+          </div>
+        </div>
+        <div>
+          <div id="words-table" style = "width: 100%;">
+          </div>
+        </div>
       </div>
-
-       <div id="words-table">
-       </div>
     </div>
   </div>
  </body>

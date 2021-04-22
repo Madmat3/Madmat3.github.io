@@ -35,7 +35,8 @@ function getAllThemes() {
 
 
 function displayWords(words) {
-      var table_data = '<table class="table table-bordered table-striped">';
+      //var table_data = '<table class="table table-bordered table-striped">';
+      var table_data = '<table class="table-words">';
 
       table_data += '<tr id="header-table">';
       table_data += '<th>English word</th>';

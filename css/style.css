@@ -9,6 +9,8 @@
     font-weight:    300;
 }
 
+
+
 body {
   --green-darker: #060C00;  
   --green-dark: #295802;
@@ -261,4 +263,86 @@ body {
 .victory-img {
   width: 15vw;
   height: auto;
+}
+
+.table-words {
+  background: var(--brown-light);
+  border-radius: 1vw;
+  margin: auto;
+  width: 50%;
+  text-transform: capitalize;
+  padding: 1vw;
+}
+
+.table-words th {
+  /* background-color: red; */
+  padding: 0.3vw;
+  /* border-radius: 1vw; */
+  font-size: 2vw;
+}
+
+.table-words th, td {
+  /* background-color: red; */
+  padding: 0.3vw;
+  font-size: 1.2vw;
+  /* border-radius: 1vw; */
+}
+
+select {
+  /* // A reset of styles, including removing the default dropdown arrow */
+  appearance: none;
+  /* // Additional resets for further consistency */
+  background-color: transparent;
+  border: none;
+  padding: 0 1em 0 0;
+  margin: 0;
+  /* width: 100%; */
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+  outline: none;
+}
+
+.theme-menu {
+  width: 10vw;
+  /* min-width: 15ch;
+  max-width: 30ch; */
+  margin: auto;
+  border-radius: 0.25em;
+  padding: 0.25em 0.5em;
+  font-size: 1.5vw;
+  cursor: pointer;
+  line-height: 1.1;
+  /* background-color: #fff; */
+  /* background-image: linear-gradient(to top, #f9f9f9, #fff 33%); */
+  display: grid;
+  grid-template-areas: "select";
+  align-items: center;
+}
+
+.theme-selector {
+  background-color: var(--brown-light);
+  padding: 0.5vw;
+  border-radius: 1vw;
+  /* width: 10vw; */
+}
+
+.theme-menu::after {
+  content: "";
+  width: 0.8em;
+  height: 0.5em;
+  margin: 0.5vw;
+  background-color: var(--brown-dark);
+  clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+  justify-self: end;
+}
+
+.theme-menu::-ms-expand {
+  display: none;
+}
+
+select,
+.theme-menu:after {
+  grid-area: select;
 }
